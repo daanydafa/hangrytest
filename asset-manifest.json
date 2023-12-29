@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/hangrytest/static/css/main.b2a32c9b.css",
+    "main.js": "/hangrytest/static/js/main.343170d0.js",
+    "static/media/mockup.png": "/hangrytest/static/media/mockup.cd664818dec2afd0e80b.png",
+    "static/media/img4.png": "/hangrytest/static/media/img4.0b604a61674d3f32d798.png",
+    "static/media/img1.png": "/hangrytest/static/media/img1.f37a5fa5bc745c4112d0.png",
+    "static/media/img3.png": "/hangrytest/static/media/img3.2c4710c84d9a0cba43a4.png",
+    "static/media/img2.png": "/hangrytest/static/media/img2.017be83bed8713cc1a7e.png",
+    "static/media/Eats.png": "/hangrytest/static/media/Eats.91923f912f2c30746150.png",
+    "static/media/brand3.png": "/hangrytest/static/media/brand3.6aace356e70c040ead2e.png",
+    "static/media/brand1.png": "/hangrytest/static/media/brand1.f22235c69099bb1bb778.png",
+    "index.html": "/hangrytest/index.html",
+    "main.b2a32c9b.css.map": "/hangrytest/static/css/main.b2a32c9b.css.map",
+    "main.343170d0.js.map": "/hangrytest/static/js/main.343170d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2a32c9b.css",
+    "static/js/main.343170d0.js"
+  ]
+}
