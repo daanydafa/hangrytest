@@ -1,0 +1,40 @@
+.find {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px 13%;
+    overflow: hidden;
+}
+
+.apps-wrapper {
+    width: inherit;
+    margin-block-start: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appslogo {
+    filter: saturate(0);
+    opacity: 0.4;
+    max-width: 170px;
+    max-height: 50px;
+    transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.find-heading {
+    display: flex;
+    color: #5A5A5A;
+    font-weight: 400;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.appslogo:hover {
+    filter: saturate(1);
+    opacity: 1;
+}

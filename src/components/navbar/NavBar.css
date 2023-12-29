@@ -1,0 +1,124 @@
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(60px);
+    background: rgba(255,255,255,var(--bg-opacity,0.8));
+    padding: 20px 11.5%;
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+ul, .mobile-menu {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #303030;
+}
+
+li {
+    margin-inline-start: 40px;
+    padding-block-end: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    transform: translateY(3px) scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+}
+
+.nav-link:hover::before {
+    transform: translateY(0) scaleY(1);
+    background-color: #A30926; 
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+.menu-icon::before {
+    content: '\2630';
+    font-size: 24px;
+    color: #303030;
+}
+
+.dropdown-menu.open {
+    display: block;
+}
+
+ul.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    nav ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        background-color: #fff;
+        box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .05);
+        opacity: 1;
+        transform-origin: top;
+        transition: all .5s;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+
+    .mobile-menu li {
+        margin-inline-start: 0;
+        padding-block: 15px;
+        text-align: center;
+    }
+
+    .mobile-menu .nav-link {
+        display: block;
+    }
+
+    .mobile-menu .dropdown-menu,
+    .mobile-menu .dropdown {
+        display: block;
+    }
+
+    .mobile-menu .dropdown-content {
+        display: none;
+    }
+
+    .mobile-menu .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #303030;
+    }
+
+    .mobile-menu .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
